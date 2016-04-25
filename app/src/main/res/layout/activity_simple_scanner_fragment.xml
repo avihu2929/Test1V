@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <fragment android:name="com.example.avihu.verifitytest1.SimpleScannerFragment"
+              android:id="@+id/scanner_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+        android:layout_gravity="top" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scancode"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:id="@+id/textView"
+                android:layout_gravity="right" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/decrease_enter"
+                android:visibility="gone"
+                android:id="@+id/buttonVaild"
+                android:layout_gravity="right" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addnewuser"
+                android:visibility="gone"
+                android:id="@+id/buttonNew"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:visibility="gone"
+            android:id="@+id/personImage"
+            android:layout_gravity="top|right" />
+
+    </LinearLayout>
+
+</LinearLayout>
